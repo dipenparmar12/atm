@@ -18,8 +18,9 @@
     
     Input: 7878
     Output: “Invalid Amount”
+    
+ @complexity space O(1), time O(1)
  */
-
 function cashWithdraw(amt, order = 'DESC') {
   if (amt <= 0 || amt % 10 !== 0) return {} // 'Invalid Amount'
   const banknotes = [1000, 500, 100, 50, 20, 10]
